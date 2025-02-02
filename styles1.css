@@ -1,0 +1,151 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Naturaly';
+    src: url('assets/font/Naturaly.otf') format('opentype');
+}
+
+body {
+    font-family: 'Naturaly', sans-serif;
+    background: url('https://raw.githubusercontent.com/user7210unix/White-DWM/refs/heads/main/Backgrounds/blur.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+    line-height: 1.2; /* Increased line height for better readability */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    border-radius: 17px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3.2em; /* Larger title */
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em; /* Increased font size for better readability */
+    color: #ccc;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.showcase-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+}
+
+.showcase-item.reverse {
+    flex-direction: row-reverse; /* Reverse the layout for the second item */
+}
+
+.image {
+    flex: 1;
+}
+
+.image img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensures smooth transition for both */ 
+}
+
+.info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.info h2 {
+    font-size: 2.5em; /* Slightly larger subtitle */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.info ul li {
+    font-size: 1.3em; /* Larger list item text */
+    color: #ccc;
+    margin-bottom: 12px; /* Increased space between list items */
+}
+
+.info h3 {
+    font-size: 1.8em; /* Larger section headers */
+    color: #fff;
+    margin-top: 30px;
+}
+
+.download {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.download h2 {
+    font-size: 2.5em; /* Slightly larger title */
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #394260;
+    color: white;
+    text-decoration: none;
+    font-size: 2.6em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #4d5780;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+    transform: translateY(1px);
+}
+
